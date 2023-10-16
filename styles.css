@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #73288e;
+    --secondary: #ffa800;
+    --secondary-400: #ffb31c;
+    --tertiary: #dce4ed;
+    --stroke: #86a4c3;
+    --white: #fff;
+    --black: #333;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: var(--tertiary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header h5 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+    color: var(--black);
+}
+
+header h5 span {
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.input-container label {
+    font-size: 0.8rem;
+    color: var(--black);
+}
+
+.input-container input {
+    margin-top: 0.5rem;
+    padding: 0.8rem 0.5rem;
+    font-size: 0.8rem;
+    background-color: var(--tertiary);
+    border: 1.5px solid var(--stroke);
+    border-radius: 4px;
+    outline: none;
+    box-shadow: -3px -3px 6px #fff, 3px 3px 6px #99b5d1;
+}
+
+#forgot-password {
+    font-size: 0.8rem;
+    text-align: right;
+    color: var(--secondary-400);
+}
+
+button[type="submit"] {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+#signup {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#signup a {
+    color: var(--secondary-400);
+}
