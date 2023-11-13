@@ -53,6 +53,26 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.75rem;
+    position: relative;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+#password-show,
+#password-hide {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    outline: none;
+    color: var(--black);
+}
+
+#password-hide {
+    display: none;
 }
 
 .input-container label {
@@ -101,4 +121,8 @@ button[type="submit"]:hover {
 
 #signup a {
     color: var(--secondary-400);
+}
+
+#password-visibility:hover {
+    cursor: pointer;
 }
